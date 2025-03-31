@@ -1,4 +1,4 @@
-@import "../../../assets/styles/base/variable.scss";
+@use "../../../assets/styles/base/variable.scss" as *;
 
 .btn {
   display: inline-flex;

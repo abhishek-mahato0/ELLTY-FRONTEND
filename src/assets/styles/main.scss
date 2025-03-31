@@ -1,2 +1,2 @@
-@import "./base/typography.scss";
-@import "./base/variable.scss";
+@use "./base/typography.scss" as *;
+@use "./base/variable.scss" as *;
