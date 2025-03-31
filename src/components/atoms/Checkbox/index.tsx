@@ -4,21 +4,20 @@ import { Checked } from "../../../assets/icons";
 
 interface CheckboxProps {
   checked?: boolean;
-  onChange?: () => void;
   className?: string;
+  isHovered?: boolean;
 }
 
 const Checkbox: React.FC<CheckboxProps> = ({
   checked = false,
-  onChange = () => {},
   className = "",
+  isHovered = false,
 }) => {
   return (
     <span
-      className={`checkbox ${
+      className={`checkbox ${isHovered ? "checkbox--hovered" : ""} ${
         checked ? "checkbox--checked" : "checkbox--default"
       } ${className}`}
-      onClick={onChange}
     >
       <Checked />
     </span>

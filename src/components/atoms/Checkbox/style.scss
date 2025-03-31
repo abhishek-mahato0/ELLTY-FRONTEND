@@ -10,11 +10,11 @@
   border-radius: 6px;
 
   &:hover {
-    color: #e3e3e3;
+    color: $checkbox-svg-color;
   }
   &:active,
   &:focus {
-    outline: 3px solid #d2e2f6;
+    outline: 3px solid $checkbox-focus-color;
   }
   &--default {
     background-color: #ffffff;
@@ -23,7 +23,8 @@
   }
 
   &--checked {
-    background-color: #2469f6;
+    background-color: $checkbox-checked-color;
+    border: 1px solid $checkbox-checked-color;
     color: #ffffff;
   }
 }

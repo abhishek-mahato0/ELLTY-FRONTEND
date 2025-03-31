@@ -1,8 +1,10 @@
+import { Card } from "./components/organisms";
+
 function App() {
   return (
-    <>
-      <div>kjdhfkj</div>
-    </>
+    <div className="app-container">
+      <Card />
+    </div>
   );
 }
 
