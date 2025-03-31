@@ -1,0 +1,29 @@
+@import "../../../assets//styles/base/variable.scss";
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 6px;
+
+  &:hover {
+    color: #e3e3e3;
+  }
+  &:active,
+  &:focus {
+    outline: 3px solid #d2e2f6;
+  }
+  &--default {
+    background-color: #ffffff;
+    border: 1px solid $checkbox-border-color;
+    color: #ffffff;
+  }
+
+  &--checked {
+    background-color: #2469f6;
+    color: #ffffff;
+  }
+}
